@@ -39,3 +39,15 @@ button,a{border:0;border-radius:14px;padding:12px 16px;background:#edf3ff;color:
   .mobileCards{display:grid;gap:10px;margin:12px 0}.mobileCards article{background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:var(--shadow)}.mobileCards article>div{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.mobileCards b{font-size:16px;line-height:1.18}.mobileCards p{margin:8px 0;color:var(--ink);font-size:14px}.mobileCards small{color:var(--muted);font-weight:800;line-height:1.35}.mobileCards article.active{border-color:var(--blue);box-shadow:0 14px 38px #1f4b9920}
   .routePage>.table{display:none}.resources .table{display:none}
 }
+
+/* Immediate mobile refinement pass */
+@media(max-width:760px){
+  .hero>div:first-child{min-height:56vh;display:grid;align-content:center;gap:8px;background:linear-gradient(160deg,#12336f,#2f6fe4)}
+  .hero h1{font-size:clamp(32px,10vw,42px);max-width:10ch}
+  .hero .actions{margin-top:14px}
+  .pageHero{position:relative;overflow:hidden}.pageHero:after{content:'';position:absolute;right:-34px;top:-34px;width:110px;height:110px;border-radius:50%;background:#edf3ff;z-index:0}.pageHero>*{position:relative;z-index:1}
+  .stat:nth-child(1),.stat:nth-child(2),.stat:nth-child(3),.stat:nth-child(4){min-height:132px}
+  .card,.panel,.stat{box-shadow:0 10px 28px #17203312}
+  .mobileCards article{min-height:112px;display:grid;align-content:center}
+  .badges{gap:5px}.badges span{max-width:100%;overflow:hidden;text-overflow:ellipsis}
+}
