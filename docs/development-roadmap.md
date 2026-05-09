@@ -53,3 +53,36 @@ The project is a frontend MVP for the RSSU Technopark operational dashboard:
 - `/rssu-technopark-projects/#/home`, `#/projects`, `#/resources`, `#/grants`, `#/nts` load.
 - Manifest/favicon/app icons return 200.
 - Mobile UI remains readable at 360–430px width.
+
+## Sprint checkpoint 1/12 — 2026-05-10 00:14 MSK
+
+### Current audit
+
+Main version is published and stable:
+
+- GitHub Pages is enabled via Actions.
+- Core routes exist: `#/home`, `#/resources`, `#/projects`, `#/grants`, `#/nts`.
+- Mobile-first work completed: bottom navigation, mobile cards, larger touch targets.
+- Branding completed: crab logo, favicon, app icons, PWA manifest.
+- Grants Gantt chart was redesigned into a real timeline.
+
+### Parallel alternative
+
+Alternative version now exists separately:
+
+- Repo: https://github.com/amAILab/rssu-technopark-projects-alt
+- Site: https://amailab.github.io/rssu-technopark-projects-alt/
+- It uses the imported `NTS Workspace` HTML concept, so it is meaningfully different from the main version.
+
+### Next UX/code improvement for main version
+
+Focus next on **data/API readiness**:
+
+1. Extract mock data from `src/main.jsx` into a separate data module.
+2. Add a small API adapter layer for future Google Apps Script reads/writes.
+3. Keep current UI unchanged, but make backend connection easier.
+
+### Notes from async commands
+
+- Step3D Gmail lead check failed because `google-workspace` MCP timed out/offline. This is not “no leads”; it means the check could not access Gmail.
+- Alternative site deploy succeeded via GitHub Pages workflow.
