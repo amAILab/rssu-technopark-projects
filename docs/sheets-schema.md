@@ -29,3 +29,21 @@
 
 ## AgentQueue
 `id, created_at, event_type, payload_json, status, attempts, last_error, processed_at`
+
+## NTSMeetings
+`meeting_id, number, date, title, status, protocol_url, created_at, updated_at`
+
+## Votes
+`vote_id, meeting_id, agenda_id, question, type, status, qr_url, created_at, closed_at`
+
+## VoteResults
+`result_id, vote_id, participant_id, participant_name, choice, comment, created_at`
+
+## ChatMessages
+`message_id, created_at, page, user_name, text, project_id, grant_id, agenda_id, agent_status, processed_at`
+
+## ProtocolDraft
+`draft_id, meeting_id, section, source_type, source_id, text, status, created_at`
+
+## PassportQuality
+`project_id, completeness, status, missing_drive_url, missing_responsible, missing_nearest_dates, missing_description, updated_at`
