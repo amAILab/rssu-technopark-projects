@@ -51,3 +51,11 @@ button,a{border:0;border-radius:14px;padding:12px 16px;background:#edf3ff;color:
   .mobileCards article{min-height:112px;display:grid;align-content:center}
   .badges{gap:5px}.badges span{max-width:100%;overflow:hidden;text-overflow:ellipsis}
 }
+/* NTS mobile meeting mode refinement */
+@media(max-width:760px){
+  .agendaCards article{border-left:5px solid #dbe7ff}.agendaCards article.active{border-left-color:var(--blue);background:linear-gradient(180deg,#fff,#f7faff)}
+  .agendaCards article>div{align-items:flex-start}.agendaCards .pill{background:#172033;color:#fff;white-space:normal;text-align:center}
+  .ntsHead{display:block}.ntsHead .qr{display:grid!important;margin-top:12px;min-height:120px;border:1px dashed #b9c6da;background:#f8fbff}.ntsHead .qr svg{width:64px;height:64px}
+  .meetingConsole{background:linear-gradient(180deg,#fff,#f7faff);border-color:#c7d8ff}.meetingConsole h2{font-size:24px;line-height:1.12}.meetingConsole p{font-size:14px;line-height:1.45}.meetingConsole .actions{grid-template-columns:1fr}.meetingConsole .actions button:first-child{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff}.meetingConsole aside{background:#fff;border-color:#c7d8ff}
+  .routePage:has(.agendaCards) .grid.stats{grid-template-columns:repeat(2,1fr)!important}.routePage:has(.agendaCards) .grid.stats .stat{min-height:108px}.routePage:has(.agendaCards) .grid.stats .stat b{font-size:30px}
+}
